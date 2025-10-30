@@ -14,3 +14,19 @@ __pycache__/
 build/
 dist/
 *.egg-info/
+
+# Data files - arquivos grandes de dados
+*.csv
+*.parquet
+*.xlsx
+*.xls
+data/
+datasets/
+
+# Model files
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.pb
+models/
