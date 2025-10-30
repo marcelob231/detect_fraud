@@ -4,3 +4,6 @@ flask
 # Ferramentas de build
 pip==24.2
 pip-tools==7.4.1
+
+#Testes
+pytest
