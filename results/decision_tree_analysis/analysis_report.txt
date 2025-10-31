@@ -1,0 +1,34 @@
+============================================================
+        RELATÓRIO DE ANÁLISE - DECISION TREE
+============================================================
+
+1. MÉTRICAS DE PERFORMANCE:
+------------------------------
+Acurácia: 0.9843
+Precisão (Fraude): 0.9899
+Recall (Fraude): 0.9787
+F1-Score (Fraude): 0.9842
+F1-Score Macro: 0.9843
+
+2. CARACTERÍSTICAS DO MODELO:
+------------------------------
+Profundidade da árvore: 10
+Número de folhas: 181
+Features utilizadas: 30
+Tempo de treinamento: 1.99s
+
+3. MATRIZ DE CONFUSÃO:
+------------------------------
+Verdadeiros Negativos: 56,294
+Falsos Positivos: 569
+Falsos Negativos: 1,213
+Verdadeiros Positivos: 55,650
+
+4. ARQUIVOS GERADOS:
+------------------------------
+• feature_importance.png - Importância das features
+• tree_structure.png - Estrutura da árvore
+• confusion_matrix.png - Matriz de confusão
+• probability_distribution.png - Distribuição das probabilidades
+• top_features_distribution.png - Distribuição das top features
+• decision_tree_model.joblib - Modelo salvo

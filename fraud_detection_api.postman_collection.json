@@ -1,0 +1,79 @@
+{
+  "info": {
+    "name": "Fraud Detection API",
+    "description": "APIs para detec\u00e7\u00e3o de fraude com Decision Tree"
+  },
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{auth_token}}"
+      }
+    ]
+  },
+  "item": [
+    {
+      "name": "Authentication",
+      "item": [
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"username\": \"admin\", \"password\": \"admin123\"}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/auth/login"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Decision Tree",
+      "item": [
+        {
+          "name": "Model Info",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/models/decision_tree/info"
+            }
+          }
+        },
+        {
+          "name": "Evaluate Model",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/models/decision_tree/evaluate"
+            }
+          }
+        },
+        {
+          "name": "Feature Importance",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/models/decision_tree/feature-importance"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:5000"
+    }
+  ]
+}
